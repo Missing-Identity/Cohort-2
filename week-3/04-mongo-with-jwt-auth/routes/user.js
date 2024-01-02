@@ -3,7 +3,7 @@ const router = Router();
 const userMiddleware = require("../middleware/user");
 const { Course, User } = require("../db/index");
 const jwt = require("jsonwebtoken");
-const bcrypt = require("bcryptjs");
+const bcrypt = require("bcrypt");
 
 // User Routes
 router.post("/signup", async (req, res) => {
